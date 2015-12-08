@@ -1,0 +1,168 @@
+html{
+    font-size:100%;
+}
+.relative{
+    position: relative !important;
+}
+.absolute{
+    position: absolute !important;
+}
+
+label.item.has-error {  
+    border-bottom: 2px solid red;
+}
+label.item.has-error-lr {  
+    border-left: 2px solid red;
+    border-right: 2px solid red;
+}
+label.item.valid-lr {  
+    border-left: 2px solid green;
+    border-right: 2px solid green;
+}
+
+#loginForm{
+    padding-top: 2em;
+    vertical-align: middle;
+    text-align: center;
+    width:100%;
+    height:100%
+}
+#loginForm .panel, #loginForm form, #loginForm .list{
+    height:100%;
+}
+#loginForm label{
+    padding-left: 0.4rem;
+}
+#loginForm label.item-input .icon{
+    font-size: 2rem;
+    min-width: 2rem;    
+    padding: 0 1rem 0 0.5rem;
+}
+#loginForm .absolute.button{
+    z-index: 9;
+    right: 1rem;
+    top: 1rem;
+}
+#loginForm .absolute.list{
+    z-index: 999;
+    width: 100%;
+    top: 3.8rem;
+    left:0px;
+}
+#loginForm .absolute.list .item{
+    padding-left: 3rem;
+    text-align: left;
+    font-size: 1rem;
+}
+.input-label, .item, .item-input textarea, .item-input input,.item-input-inset input{
+    font-size: 1rem;
+}
+.item-input input, .item-input-inset input{
+    line-height: 1.2rem;
+    height:2.2em;
+}
+.item{    
+    padding: 1rem;
+}
+.item.item-input{
+    padding: 0.5rem 1rem;
+}
+.item-complex .item-content, .item-radio .item-content {
+    padding: 1rem 3rem 1rem 1rem;
+    margin: -1rem 0;
+}
+.item-complex.item-icon-right .item-content {
+    padding-right: 3.3rem;
+}
+.item-icon-left, .item-complex.item-icon-left .item-content {
+    padding-left: 3.3rem;
+}
+.item-icon-right {
+    padding-right: 3rem;
+}
+.item-icon-right .icon:last-child {
+    right: 0.8rem;
+}
+.item-icon-left .icon:first-child {
+    left: 0.8rem;
+}
+.item-note{
+    font-size: 0.8rem;
+}
+.item-icon-left .icon, .item-icon-right .icon{
+    font-size: 2rem;
+}
+
+.popup-container .popup{
+    width: 70%; 
+}
+.popup-title,.loading-container .loading ,.tabs-icon-top > .tabs .tab-item, .tabs-icon-top.tabs .tab-item, .tabs-icon-bottom > .tabs .tab-item, .tabs-icon-bottom.tabs .tab-item {
+    font-size: 1rem;
+    line-height: 1.2rem;
+}
+.popup-body{
+    font-size: 0.8rem;
+    line-height: 1rem;
+}
+.error-msg .popup{
+    width:12rem;
+    background-color: #000000;    
+    border-radius: 0.4rem;
+    opacity: 0.4;
+}
+.error-msg .popup .popup-head{
+    border-bottom: 0;
+    padding:0.8rem 0.4rem;
+}
+.error-msg .popup .popup-title{
+    font-size: 1rem;
+    color:#ffffff;
+}
+
+.has-header {
+    top: 2.7rem;
+}
+.bar{
+    height: 2.7rem;
+}
+.bar .title,.bar header-item{
+    font-size:1.3rem !important;
+    height: 2.7rem !important;
+    line-height: 2.7rem !important;    
+}
+.button,.bar .button, .bar .button.button-clear{
+    font-size: 1rem;
+    line-height: 1.9rem;
+}
+.bar .button{
+    font-size: 0.8rem;
+}
+.bar .button.button-clear{
+    height:2.7rem;
+    max-height: 2.7rem;
+}
+.bar .button.button-clear .icon:before, .bar .button.button-clear.icon:before, .bar .button.button-clear.icon-left:before, .bar .button.button-clear.icon-right:before {
+    font-size: 2rem;
+    line-height: 2rem;
+}
+.button-icon.icon:before{
+    font-size: 2rem;
+    line-height: 2rem;
+}
+.button-clear{
+    max-height: 2.6rem;
+}
+
+.has-tabs, .bar-footer.has-tabs {
+    bottom: 3.6rem;  
+}
+.tabs{
+    height:3.6rem;
+}
+.tab-item{
+    max-width: 9.4rem;
+}
+.tab-item .icon{
+    font-size: 2.3rem;
+    height: 2.3rem;
+}
