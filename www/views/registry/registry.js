@@ -9,7 +9,7 @@ angular.module('registryModule',[])
     })
     .controller('registryCtrl', function ($scope) {
         // login controller
-        // �û��ĵ�¼ƾ֤
+        // 用户的登录凭证
         alert("werwer");
 
     });

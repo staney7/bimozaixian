@@ -8,6 +8,6 @@ angular.module('registryModule',[])
             });
     })
     .controller('registryCountyCtrl', function ($scope) {
-        //Ñ¡Ôñ³ÇÊÐ
+        //é€‰æ‹©åŸŽå¸‚
 
     });

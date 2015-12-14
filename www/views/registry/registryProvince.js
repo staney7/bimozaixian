@@ -8,6 +8,6 @@ angular.module('registryModule',[])
             });
     })
     .controller('registryProvinceCtrl', function ($scope) {
-        //Ñ¡Ôñ³ÇÊÐ
+        //é€‰æ‹©åŸŽå¸‚
 
     });

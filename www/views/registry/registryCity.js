@@ -8,6 +8,6 @@ angular.module('registryModule',[])
             });
     })
     .controller('registryCityCtrl', function ($scope) {
-        //Ñ¡Ôñ³ÇÊÐ
+        //é€‰æ‹©åŸŽå¸‚
 
     });
