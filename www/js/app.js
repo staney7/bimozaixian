@@ -12,7 +12,7 @@ angular.module('bimozaixianApp', ['ionic', 'personModule', 'homeworkModule', 're
                         url: '/tabs',
                         templateUrl: 'views/tabs/tabs.html'
                     });
-            $urlRouterProvider.otherwise('/registry');
+            $urlRouterProvider.otherwise('/tabs/word');
             $httpProvider.defaults.transformRequest = function (data) {
                 if (!angular.isObject(data)) {
                     return ((data == null) ? "" : data.toString());

@@ -10,6 +10,6 @@ angular.module('registryModule',[])
     .controller('registryCtrl', function ($scope) {
         // login controller
         // 用户的登录凭证
-
+        alert("werwer");
 
     });
