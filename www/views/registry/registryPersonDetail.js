@@ -1,13 +1,12 @@
-angular.module('registryModule',[])
-    .config(function ($stateProvider) {
+registryModlue.config(function ($stateProvider) {
         $stateProvider
-            .state('registryPersonDetaile', {
-                url: '/registryPersonDetaile',
-                templateUrl: 'views/registry/registryPersonDetaile.html',
-                controller: 'registryPersonDetaileCtrl'
+            .state('registryPersonDetail', {
+                url: '/registryPersonDetail',
+                templateUrl: 'views/registry/registryPersonDetail.html',
+                controller: 'registryPersonDetailCtrl'
             });
     })
-    .controller('registryPersonDetaileCtrl', function ($scope) {
+    .controller('registryPersonDetailCtrl', function ($scope) {
         //选择城市
 
     });

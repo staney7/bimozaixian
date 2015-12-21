@@ -1,5 +1,4 @@
-angular.module('registryModule',[])
-    .config(function ($stateProvider) {
+registryModlue.config(function ($stateProvider) {
         $stateProvider
             .state('registryCity', {
                 url: '/registryCity',
@@ -8,6 +7,5 @@ angular.module('registryModule',[])
             });
     })
     .controller('registryCityCtrl', function ($scope) {
-        //选择城市
 
     });

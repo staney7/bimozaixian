@@ -1,10 +1,13 @@
-angular.module('personModule',[])
-    .config(function ($stateProvider) {
+personModule.config(function ($stateProvider) {
         $stateProvider
             .state('tabs.changeMobile', {
                 url: '/changeMobile',
-                templateUrl: 'views/person/changeMobile.html',
-                controller: 'changeMobileCtrl'
+                views: {
+                    'person-tab': {
+                        templateUrl: 'views/person/changeMobile.html',
+                        controller: 'changeMobileCtrl'
+                    }
+                }
             });
     })
     .controller('changeMobileCtrl', function ($scope) {

@@ -1,5 +1,5 @@
-angular.module('personModule', [])
-    .config(function($stateProvider){
+personModule=angular.module('personModule', []);
+personModule.config(function($stateProvider){
         $stateProvider
             .state('tabs.person', {
                 url: '/person',

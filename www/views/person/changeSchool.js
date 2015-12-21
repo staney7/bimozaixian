@@ -1,10 +1,13 @@
-angular.module('personModule',[])
-    .config(function ($stateProvider) {
+personModule.config(function ($stateProvider) {
         $stateProvider
             .state('tabs.changeSchool', {
                 url: '/changeSchool',
-                templateUrl: 'views/person/changeSchool.html',
-                controller: 'changeSchoolCtrl'
+                views: {
+                    'person-tab': {
+                        templateUrl: 'views/person/changeSchool.html',
+                        controller: 'changeSchoolCtrl'
+                    }
+                }
             });
     })
     .controller('changeSchoolCtrl', function ($scope) {

@@ -1,10 +1,9 @@
-angular.module('homeworkModule', [])
-    .config(function($stateProvider){
+homeworkModule.config(function($stateProvider){
         $stateProvider
             .state('tabs.goodHomework', {
                 url: '/goodHomework',
                 views: {
-                    'goodHomework-tab': {
+                    'homework-tab': {
                         templateUrl: 'views/homework/goodHomework.html',
                         controller: 'goodHomeworkCtrl'
                     }

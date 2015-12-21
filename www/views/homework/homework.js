@@ -1,5 +1,5 @@
-angular.module('homeworkModule', [])
-    .config(function($stateProvider){
+homeworkModule=angular.module('homeworkModule', []);
+homeworkModule.config(function($stateProvider){
         $stateProvider
             .state('tabs.homework', {
                 url: '/homework',

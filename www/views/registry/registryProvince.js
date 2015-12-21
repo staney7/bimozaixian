@@ -1,5 +1,4 @@
-angular.module('registryModule',[])
-    .config(function ($stateProvider) {
+registryModlue.config(function ($stateProvider) {
         $stateProvider
             .state('registryProvince', {
                 url: '/registryProvince',

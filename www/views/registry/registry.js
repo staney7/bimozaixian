@@ -1,5 +1,5 @@
-angular.module('registryModule',[])
-    .config(function ($stateProvider) {
+registryModlue=angular.module('registryModule',[]);
+registryModlue.config(function ($stateProvider) {
         $stateProvider
             .state('registry', {
                 url: '/registry',
@@ -8,8 +8,5 @@ angular.module('registryModule',[])
             });
     })
     .controller('registryCtrl', function ($scope) {
-        // login controller
-        // 用户的登录凭证
-        alert("werwer");
 
     });

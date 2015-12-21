@@ -1,5 +1,4 @@
-angular.module('wordModule', [])
-    .config(function($stateProvider){
+wordModule.config(function($stateProvider){
         $stateProvider
             .state('tabs.bihua', {
                 url: '/bihua',

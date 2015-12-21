@@ -1,10 +1,13 @@
-angular.module('personModule',[])
-    .config(function ($stateProvider) {
+personModule.config(function ($stateProvider) {
         $stateProvider
             .state('tabs.personRecord', {
                 url: '/personRecord',
-                templateUrl: 'views/person/personRecord.html',
-                controller: 'personRecordCtrl'
+                views: {
+                    'person-tab': {
+                        templateUrl: 'views/person/personRecord.html',
+                        controller: 'personRecordCtrl'
+                    }
+                }
             });
     })
     .controller('personRecordCtrl', function ($scope) {

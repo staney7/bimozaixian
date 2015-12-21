@@ -1,10 +1,9 @@
-angular.module('wordModule', [])
-    .config(function($stateProvider){
+wordModule.config(function($stateProvider){
         $stateProvider
             .state('tabs.bushouDetail', {
                 url: '/bushouDetail',
                 views: {
-                    'bushouDetail-tab': {
+                    'word-tab': {
                         templateUrl: 'views/word/bushouDetail.html',
                         controller: 'bushouDetailCtrl'
                     }

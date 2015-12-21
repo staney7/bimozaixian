@@ -1,10 +1,9 @@
-angular.module('wordModule', [])
-    .config(function($stateProvider){
+wordModule.config(function($stateProvider){
         $stateProvider
             .state('tabs.lizi', {
                 url: '/lizi',
                 views: {
-                    'lizi-tab': {
+                    'word-tab': {
                         templateUrl: 'views/word/liziDetail.html',
                         controller: 'liziCtrl'
                     }

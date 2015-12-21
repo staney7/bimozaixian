@@ -1,5 +1,5 @@
-angular.module('wordModule', [])
-    .config(function($stateProvider){
+wordModule=angular.module('wordModule', []);
+wordModule.config(function($stateProvider){
         $stateProvider
             .state('tabs.word', {
                 url: '/word',
