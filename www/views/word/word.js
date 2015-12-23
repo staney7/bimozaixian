@@ -11,6 +11,13 @@ wordModule.config(function($stateProvider){
                 }
             });
     })
-    .controller('wordCtrl', function($scope){
-        // word controller
+    .controller('wordCtrl', function($scope,$ionicPopover){
+        $scope.search={content:""};
+        $scope.word_mode="全部";
+        $ionicPopover.fromTemplateUrl('templates/popover.html', {
+            scope: $scope
+        }).then(function(popover) {
+            $scope.popover = popover;
+        });
+
     });

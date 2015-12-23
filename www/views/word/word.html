@@ -1,3 +1,75 @@
-<ion-view view-title="例字主页面">
-    hello
-</ion-view>
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style type="text/css">
+        .header-div{
+            width: 100%;
+            height: 60px;
+            background: #DDDDDD ;
+            padding: 0px;
+        }
+        .header-search{
+            background: #FFFFFF;
+            margin-top: 10px;
+            margin-left: 10px;
+            float:left;
+            width: 70%;
+            height: 35px;
+            border-radius: 3px;
+        }
+        .word-mode-style{
+            font-size: 24px;
+            color: #3c3c3c;
+            margin-top: 17px;
+            margin-left: 25px;
+            float:left;
+        }
+        .icon-style {
+            float:left;
+            margin-top: 17px;
+            margin-left: 15px;
+        }
+        .search-icon{
+            font-size: 25px;
+            float:left;
+        }
+    </style>
+</head>
+<body>
+    <ion-view view-title="例字" hide-nav-bar="true">
+        <div class="header-div">
+            <span class="word-mode-style" ng-click="popover.show($event)">{{word_mode}}</span>
+            <i class="icon ion-ios-arrow-down icon-style" ng-click="popover.show($event)"></i>
+            <div class="header-search">
+                <i class="icon ion-android-search search-icon"></i>
+                <input type="text" style="float:left; margin-left: 10px" size="30" ng-model="search.content" placeholder="查询您需要的笔画偏旁或者例字"/>
+            </div>
+        </div>
+    </ion-view>
+
+    <script id="templates/popover.html" type="text/ng-template">
+        <ion-popover-view class="" style="width:90%;border-radius: 0px; position:absolute;left:0px; ">
+            <ion-content >
+                <div class="list">
+                    <a class="item" >
+                        Learn Ionic
+                    </a>
+                    <a class="item"  >
+                        Documentation
+                    </a>
+                    <a class="item" >
+                        Showcase
+                    </a>
+                    <a class="item"  >
+                        Submit an Issue
+                    </a>
+                    <a class="item" >
+                        Github Repo
+                    </a>
+                </div>
+            </ion-content>
+        </ion-popover-view>
+    </script>
+</body>
+</html>

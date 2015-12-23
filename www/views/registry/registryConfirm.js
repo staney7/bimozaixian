@@ -10,7 +10,7 @@ registryModlue.config(function ($stateProvider) {
         $scope.confirm={number:""};
         $scope.complete_registry=function(){
             alert($scope.confirm.number);
-            $state.go("tabs.lizi");
+            $state.go("tabs.word");
         }
 
     });
