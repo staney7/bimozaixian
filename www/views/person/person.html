@@ -1,3 +1,41 @@
-<ion-view view-title="个人信息">
-    hello
+<ion-view view-title="个人信息" class="has-header">
+    <ion-list>
+        <ion-item class="item-icon-right" ng-click="go_change_name()">
+            <img src="fawerwer" alt=""/>
+            {{user_name}}
+            <i class="icon ion-ios-arrow-forward"></i>
+        </ion-item>
+        <ion-item ng-click="go_change_school()">
+            <img src="" alt=""/>
+            <span>学校</span>
+            {{school_selected}};
+        </ion-item>
+        <ion-item ng-click="go_change_class()">
+            <img src="" alt=""/>
+            <span>班级</span>
+            {{class_selected}};
+        </ion-item>
+
+        <ion-item class="item-icon-right" ng-click="go_change_record()">
+            <img src="" alt=""/>
+            <span>成长档案</span>
+
+            <i class="icon ion-ios-arrow-forward"></i>
+        </ion-item>
+        <ion-item class="item-icon-right" ng-click="go_change_number()">
+            <img src="" alt=""/>
+            <span>学号</span>
+            {{user_id}};
+            <i class="icon ion-ios-arrow-forward"></i>
+        </ion-item>
+
+        <ion-item class="item-icon-right" ng-click="go_change_mobile()">
+            <img src="" alt=""/>
+            <span>手机</span>
+            {{user_mobile}};
+            <i class="icon ion-ios-arrow-forward"></i>
+        </ion-item>
+
+
+    </ion-list>
 </ion-view>

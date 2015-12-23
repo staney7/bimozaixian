@@ -1,0 +1,32 @@
+.ionic-header-color {
+    /*height: 88;*/
+    background-color:#cad1d3;
+    font-size: 34px;
+    color: #3c3c3c;
+}
+
+.ionic-img-icon {
+    height: 54px;
+    width: 54px;
+}
+
+.word-button {
+    /*width:700px;*/
+    /*/!*position: absolute;*!/*/
+    height:104px ;
+
+    margin-left: 10%;
+    width: 80%;
+    background-color: #568191;
+    font-size: 30px;
+    color:#8aa8b4;
+}
+
+.word-button:active {
+    height:104px ;
+    margin-left: 10%;
+    width: 80%;
+    background-color: #375057;
+    font-size: 30px;
+    color:#ffffff;
+}

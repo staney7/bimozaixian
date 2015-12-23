@@ -1,3 +1,7 @@
-<ion-view view-title="选择区县">
-    hello
+<ion-view view-title="选择区县" class="has-header">
+    <ion-list ng-repeat="countyName in county_list" >
+        <ion-item class="item" ng-click="select_county(countyName)">
+            {{countyName}}
+        </ion-item>
+    </ion-list>
 </ion-view>

@@ -10,7 +10,15 @@ personModule.config(function ($stateProvider) {
                 }
             });
     })
-    .controller('changeNameCtrl', function ($scope) {
-        //Ñ¡Ôñ³ÇÊÐ
+    .controller('changeNameCtrl', function ($scope,$rootScope,$state,$ionicHistory) {
+        $scope.user={name:""};
+        $scope.save=function(){
+            $rootScope.user_name=$scope.user.name;
+            $ionicHistory.clearHistory();
+            $state.go("tabs.person").then(function(){
+                $rootScope.back_button_show=false;
+                $ionicHistory.clearHistory();
+            });
+        }
 
     });

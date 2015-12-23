@@ -8,6 +8,7 @@
         <link href="css/buttons.css" rel="stylesheet">
         <link href="lib/ionic/css/ionic.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
+        <link href="css/style-new.css" rel="stylesheet">
 
         <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
         <link href="css/ionic.app.css" rel="stylesheet">
@@ -55,9 +56,13 @@
         <script src="views/word/liziDetail.js"></script>
     </head>
     <body ng-app="bimozaixianApp">
-        <ion-nav-bar class="bar-header bar-positive" align-title="center">
+        <ion-nav-bar class="bar-header ionic-header-color"  align-title="center">
+            <ion-nav-back-button class="button-clear" ng-show="back_button_show">
+                <i class="icon ion-ios-arrow-back"></i>
+            </ion-nav-back-button>
         </ion-nav-bar>
-        <ion-nav-view></ion-nav-view>
+        <ion-nav-view>
+        </ion-nav-view>
     </body>
 </html>
 

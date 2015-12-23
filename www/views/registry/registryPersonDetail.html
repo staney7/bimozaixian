@@ -1,3 +1,40 @@
-<ion-view view-title="个人信息">
-    hello
-</ion-view>
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style type="text/css">
+        .img-size{
+            width:54px;
+            height: 54px;
+        }
+    </style>
+</head>
+<body>
+
+    <ion-view view-title="个人信息" class="has-header">
+        <ion-list class="">
+            <ion-item >
+                <img src="img/signup_icon_name_normal@2x.png" class="img-size"/>
+                姓名
+                <input type="text" placeholder="例如：张三" ng-model="user.name"/>
+            </ion-item>
+            <ion-item >
+                <img src="img/signup_icon_id_normal@2x.png" class="img-size"/>
+                学号
+                <input type="text" placeholder="您的学号" ng-model="user.id"/>
+            </ion-item>
+        </ion-list>
+        <ion-item>
+            <img src="img/signup_icon_phone_normal@2x.png" class="img-size"/>
+            手机号
+            <input type="text" placeholder="您的手机号码" ng-model="user.mobile"/>
+        </ion-item>
+
+        <button class="word-button  button-rounded" style="margin-top:48px" ng-click="go_confirm()">
+            下一步
+        </button>
+    </ion-view>
+
+
+</body>
+</html>

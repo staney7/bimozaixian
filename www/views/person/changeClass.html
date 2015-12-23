@@ -1,3 +1,8 @@
-<ion-view view-title="选择班级">
-    hello
+<ion-view view-title="选择班级" class="has-header">
+    <ion-list ng-repeat="className in class_list" >
+        <ion-item class="item" ng-click="select_class(className)">
+            {{className}}
+        </ion-item>
+    </ion-list>
+
 </ion-view>

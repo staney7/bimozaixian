@@ -1,3 +1,51 @@
-<ion-view view-title="选择学校">
-    hello
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style type="text/css">
+        .ion-item-item-input{
+            background-color:#dddddd;
+            height: 88px;
+            padding-bottom: 14px;
+            padding-left:25px;
+            padding-right:25px;
+            padding-top:14px;
+        }
+        .ion-input {
+            border-color: #DDDDDD;
+            border-style: solid;
+            border-width:1px;
+            padding:8px;
+            background-color: #ffffff;
+            padding-left: 78px;
+        }
+        .ion-search-icon{
+            position:absolute;
+            color:#DDDDDD;
+            font-size: 42px;
+            top:22px;
+            left:33px;
+        }
+    </style>
+</head>
+<body>
+<ion-view view-title="选择学校" class="has-header">
+    <ion-list >
+        <ion-item class="item-input ion-item-item-input" >
+            <input type="text"
+                   style="font-size: 24px; height:60px;
+                   border-color:#DDDDDD;border-style: solid;
+                   border-width:1px;
+                   background-color: #ffffff;padding-left: 78px;"
+                   placeholder="请输入学校">
+            <i class="icon ion-android-search ion-search-icon"></i>
+        </ion-item>
+    </ion-list>
+    <ion-list ng-repeat="schoolName in school_list" >
+        <ion-item class="item" ng-click="select_school(schoolName)">
+            {{schoolName}}
+        </ion-item>
+    </ion-list>
 </ion-view>
+</body>
+</html>

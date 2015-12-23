@@ -10,7 +10,11 @@ personModule.config(function ($stateProvider) {
                 }
             });
     })
-    .controller('changeProvinceCtrl', function ($scope) {
-        //选择城市
+    .controller('changeProvinceCtrl', function ($scope,$rootScope,$state) {
+        $rootScope.province_list=["山西","河南"]
+        $scope.select_province=function(provinceName){
+            $rootScope.province_selected=provinceName;
+            $state.go("tabs.changeCity");
+        }
 
     });

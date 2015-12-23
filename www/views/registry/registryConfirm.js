@@ -6,7 +6,11 @@ registryModlue.config(function ($stateProvider) {
                 controller: 'registryConfirmCtrl'
             });
     })
-    .controller('registryConfirmCtrl', function ($scope) {
-        //选择城市
+    .controller('registryConfirmCtrl', function ($scope,$state,$rootScope) {
+        $scope.confirm={number:""};
+        $scope.complete_registry=function(){
+            alert($scope.confirm.number);
+            $state.go("tabs.lizi");
+        }
 
     });

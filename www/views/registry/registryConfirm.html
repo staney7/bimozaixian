@@ -1,3 +1,32 @@
-<ion-view view-title="短信验证">
-    hello
-</ion-view>
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style type="text/css">
+        .img-size{
+            width:42px;
+            height: 42px;
+        }
+    </style>
+</head>
+<body>
+
+    <ion-view view-title="短信验证" class="has-header">
+        <ion-list>
+            <ion-item>
+                <img src="img/signup_icon_number_normal@2x.png" class="img-size"/>
+                <span > {{user_mobile}}</span>
+                <button> 重新获取</button>
+            </ion-item>
+            <ion-item>
+                <img src="img/signup_icon_number_normal@2x.png" class="img-size"/>
+                <input type="text" placeholder="请输入收到的短信验证码" ng-model="confirm.number"/>
+            </ion-item>
+            <button class="word-button  button-rounded" style="margin-top:48px" ng-click="complete_registry()">
+                下一步
+            </button>
+        </ion-list>
+
+    </ion-view>
+</body>
+</html>

@@ -1,3 +1,7 @@
-<ion-view view-title="选择城市">
-    hello
+<ion-view view-title="选择城市" class="has-header">
+    <ion-list ng-repeat="cityName in city_list" >
+        <ion-item class="item" ng-click="select_city(cityName)">
+            {{cityName}}
+        </ion-item>
+    </ion-list>
 </ion-view>

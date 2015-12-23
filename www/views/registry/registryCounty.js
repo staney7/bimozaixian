@@ -6,7 +6,10 @@ registryModlue.config(function ($stateProvider) {
                 controller: 'registryCountyCtrl'
             });
     })
-    .controller('registryCountyCtrl', function ($scope) {
-        //选择城市
-
+    .controller('registryCountyCtrl', function ($scope,$rootScope,$state) {
+        $rootScope.county_list=["蜀山区","包河区"];
+        $scope.select_county= function (countyName) {
+            $rootScope.county_selected=countyName;
+            $state.go("registrySchool");
+        }
     });

@@ -1,3 +1,7 @@
-<ion-view view-title="选择省份">
-    hello
+<ion-view view-title="选择省份" class="has-header">
+    <ion-list ng-repeat="provinceName in province_list" >
+        <ion-item class="item" ng-click="select_province(provinceName)">
+            {{provinceName}}
+        </ion-item>
+    </ion-list>
 </ion-view>
