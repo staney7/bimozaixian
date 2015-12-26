@@ -34,6 +34,12 @@
             font-size: 25px;
             float:left;
         }
+        .popover-style{
+            width:100%; border-radius: 0px;
+            position: relative;
+            margin-top:24px;
+            margin-left: 0px;
+        }
     </style>
 </head>
 <body>
@@ -49,24 +55,10 @@
     </ion-view>
 
     <script id="templates/popover.html" type="text/ng-template">
-        <ion-popover-view class="" style="width:90%;border-radius: 0px; position:absolute;left:0px; ">
+        <ion-popover-view class="popover-style" style=" ">
             <ion-content >
                 <div class="list">
-                    <a class="item" >
-                        Learn Ionic
-                    </a>
-                    <a class="item"  >
-                        Documentation
-                    </a>
-                    <a class="item" >
-                        Showcase
-                    </a>
-                    <a class="item"  >
-                        Submit an Issue
-                    </a>
-                    <a class="item" >
-                        Github Repo
-                    </a>
+                    <a class="item"> </a>
                 </div>
             </ion-content>
         </ion-popover-view>

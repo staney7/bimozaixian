@@ -8,7 +8,8 @@ registryModlue.config(function ($stateProvider) {
     })
     .controller('registryProvinceCtrl', function ($scope ,$rootScope,$state) {
         //选择城市
-        $rootScope.province_list=["山西","河南"]
+
+        $rootScope.province_list=["山西","河南"];
         $scope.select_province=function(provinceName){
             $rootScope.province_selected=provinceName;
             $state.go("registryCity");

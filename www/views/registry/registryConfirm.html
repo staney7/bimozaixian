@@ -7,23 +7,56 @@
             width:42px;
             height: 42px;
         }
+        .get-button-release{
+            position: absolute;
+            right: 10px;
+            width: 150px;
+            height:50px ;
+            border-radius: 3px;
+            background-color: #375057;
+            font-size: 20px;
+            color:#ffffff;
+            text-align: center;
+            padding: 12px;
+        }
+        .get-button-clicked{
+            position: absolute;
+            right: 10px;
+            width: 150px;
+            border-radius: 3px;
+            height:50px ;
+            background-color: #cbcccc;
+            font-size: 20px;
+            color:#ffffff;
+            text-align: center;
+            padding: 12px;
+        }
+        .font-style{
+            margin-top: 10px;
+            font-size: 24px;
+            color:#abb0bb;
+        }
+        .float-left{
+            float: left;
+        }
     </style>
+
 </head>
 <body>
 
     <ion-view view-title="短信验证" class="has-header">
         <ion-list>
             <ion-item>
-                <img src="img/signup_icon_number_normal@2x.png" class="img-size"/>
-                <span > {{user_mobile}}</span>
-                <button> 重新获取</button>
+                <img src="img/signup_icon_number_normal@2x.png" class="img-size float-left"/>
+                <span class="font-style float-left"> werwe{{user_mobile}}</span>
+                <span class="{{get_button.class}} "  ng-click="get_button_click()"> 重新获取{{get_button.time}}</span>
             </ion-item>
             <ion-item>
-                <img src="img/signup_icon_number_normal@2x.png" class="img-size"/>
-                <input type="text" placeholder="请输入收到的短信验证码" ng-model="confirm.number"/>
+                <img src="img/signup_icon_Verification_normal@2x.png" class="img-size float-left"/>
+                <input type="text"  class="float-left"  style="margin-top:10px; height:25px; font-size:20px" size="30"  placeholder="请输入收到的短信验证码" ng-model="confirm.number"/>
             </ion-item>
-            <button class="word-button  button-rounded" style="margin-top:48px" ng-click="complete_registry()">
-                下一步
+            <button class="word-button  button-rounded" style="margin-top:48px"ng-click="complete_registry()">
+                完成
             </button>
         </ion-list>
 

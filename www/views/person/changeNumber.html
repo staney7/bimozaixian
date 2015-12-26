@@ -1,4 +1,12 @@
 <ion-view view-title="更改学号" class="has-header">
-        <input type="text" placeholder="请输入名字" ng-model="user.number"/>
-        <button ng-click="save()"> 保存</button>
+        <ion-nav-buttons side="right">
+        <span class="" style="font-size: 18px; margin-top: 6px;" ng-click="save()">
+            保存
+        </span>
+        </ion-nav-buttons>
+        <ion-list>
+                <ion-item>
+                        <input type="text" style="font-size: 18px;" placeholder="请输入学号" ng-model="user.number"/>
+                </ion-item>
+        </ion-list>
 </ion-view>

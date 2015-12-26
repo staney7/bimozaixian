@@ -1,41 +1,75 @@
+<!doctype html>
+<head>
+    <meta charset="UTF-8">
+    <style type="text/css">
+        .float-left{
+            float:left;
+        }
+        .float-right{
+            float: right;
+        }
+        .text{
+            font-size: 24px;
+        }
+
+        .text-small{
+            margin-top:10px;
+            font-size: 20px;
+            color: #abb0bb;
+        }
+        .img-size{
+            width: 40px;
+            height: 40px;
+        }
+        .icon-color{
+            color: #abb0bb;
+        }
+    </style>
+</head>
+<body>
+
 <ion-view view-title="个人信息" class="has-header">
     <ion-list>
         <ion-item class="item-icon-right" ng-click="go_change_name()">
-            <img src="fawerwer" alt=""/>
-            {{user_name}}
-            <i class="icon ion-ios-arrow-forward"></i>
+            <img src="img/signup_icon_photo_normal@2x.svg.png" style="width:80px;height: 80px; float:left"/>
+            <span class="float-left text" style="margin-top: 16px;margin-left:16px;">扎实{{user_name}}</span>
+            <i class="icon ion-ios-arrow-forward icon-color"></i>
         </ion-item>
-        <ion-item ng-click="go_change_school()">
-            <img src="" alt=""/>
-            <span>学校</span>
-            {{school_selected}};
+        <ion-item class="item-icon-right" ng-click="go_change_school()">
+            <img src="img/login_icon_school_normal@2x.png" class="img-size float-left"/>
+            <span class="float-left text" style="margin-top: 10px; margin-left: 20px;">学校</span>
+            <span class="float-right text-small">{{school_selected}}</span>
+            <i class="icon ion-ios-arrow-forward icon-color"></i>
         </ion-item>
-        <ion-item ng-click="go_change_class()">
-            <img src="" alt=""/>
-            <span>班级</span>
-            {{class_selected}};
+        <ion-item class="item-icon-right" ng-click="go_change_class()">
+            <img src="img/login_icon_class_normal@2x.png"class="img-size float-left"/>
+            <span class="float-left text" style="margin-top: 10px; margin-left: 20px;">班级</span>
+            <span class="float-right text-small">{{class_selected}}</span>
+            <i class="icon ion-ios-arrow-forward icon-color"></i>
         </ion-item>
 
         <ion-item class="item-icon-right" ng-click="go_change_record()">
-            <img src="" alt=""/>
-            <span>成长档案</span>
-
-            <i class="icon ion-ios-arrow-forward"></i>
+            <img src="img/my_icon_file.png" class="img-size float-left"/>
+            <span class="float-left text" style="margin-top: 10px; margin-left: 20px;">成长档案</span>
+            <span class="float-right text-small">暂无</span>
+            <i class="icon ion-ios-arrow-forward icon-color"></i>
         </ion-item>
         <ion-item class="item-icon-right" ng-click="go_change_number()">
-            <img src="" alt=""/>
-            <span>学号</span>
-            {{user_id}};
-            <i class="icon ion-ios-arrow-forward"></i>
+            <img src="img/signup_icon_id_normal@2x.png" class="img-size float-left"/>
+            <span class="float-left text" style="margin-top: 10px; margin-left: 20px;">学号</span>
+            <span class="float-right text-small">{{user_id}}</span>
+            <i class="icon ion-ios-arrow-forward icon-color"></i>
         </ion-item>
 
         <ion-item class="item-icon-right" ng-click="go_change_mobile()">
-            <img src="" alt=""/>
-            <span>手机</span>
-            {{user_mobile}};
-            <i class="icon ion-ios-arrow-forward"></i>
+            <img src="img/signup_icon_phone_normal@2x.png" class="img-size float-left"/>
+            <span class="float-left text" style="margin-top: 10px; margin-left: 20px;">手机</span>
+            <span class="float-right text-small">{{user_mobile}}</span>
+            <i class="icon ion-ios-arrow-forward icon-color"></i>
         </ion-item>
 
 
     </ion-list>
 </ion-view>
+</body>
+</html>
